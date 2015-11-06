@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title='blog system'
+  body
+    div(style='float:left')
+      a(href='/') home
+    div(style='float:right')
+      if(username && authenticated)
+        a(href='/signout',style='margin:10px;') Sign Out
+        a(href='/add',style='margin:10px;') Add article
+        a(href='/profile',style='margin:10px;') Profile
+        span #{username}
+      else
+        a(href='./login',style='margin:10px;') login
+        a(href='./register',style='margin:10px;') resgister
+        a(href='./forgot',style='margin:10px;') forgot password
+    div(style='padding:50px;')
+        console.log('hello-world')
