@@ -39,7 +39,12 @@ module.exports.routes = {
   'get /login': {
       controller: "LoginController",
       action: "login"
-    }
+    },
+
+  'get /register': {
+      controller: "RegisterController",
+      action: "register"
+      }
 
   /***************************************************************************
   *                                                                          *
